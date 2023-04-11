@@ -120,7 +120,7 @@ def start(message):
 
 
 @bot.message_handler(func=lambda m: True)
-def echo_all(message):
+def translation_into_Ru(message):
     translator = Translator()
     translated_text = translator.translate(message.text, dest="ru")
     mess = f'{translated_text.text} \n\n(переведено с {dict_of_lang[translated_text.src]})'
