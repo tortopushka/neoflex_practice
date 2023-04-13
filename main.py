@@ -1,15 +1,12 @@
 from googletrans import Translator
 import telebot
 from environs import Env
-
 import utils
 
 env = Env()
 env.read_env()
 
 bot = telebot.TeleBot(env("TOKEN"))
-
-
 
 @bot.message_handler(commands=['start'])
 def start(message):
