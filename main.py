@@ -21,5 +21,5 @@ def translation_into_Ru(message):
     mess = f'{translated_text.text} \n\n(переведено с {utils.dict_of_lang[translated_text.src]})'
     bot.reply_to(message, mess)
 
-
-bot.infinity_polling()
+if __name__=="__main__":
+    bot.infinity_polling()
