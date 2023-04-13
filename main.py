@@ -1,7 +1,11 @@
 from googletrans import Translator
 import telebot
+from environs import Env
 
-bot = telebot.TeleBot("6264815754:AAG0XwQDIZknuAKz8Lkvf4oVsXT7GihoLiU")
+env = Env()
+env.read_env()
+
+bot = telebot.TeleBot(env("TOKEN"))
 
 dict_of_lang = {
     'af': 'африкаанс',
