@@ -10,3 +10,4 @@ class Cache(Base):
     date_of_activity = Column(DateTime)
     text_of_message = Column(Text)
     language_code = Column(String)
+    russian_translation = Column(Text)
