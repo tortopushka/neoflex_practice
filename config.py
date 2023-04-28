@@ -1,7 +1,4 @@
-from environs import Env
-
-env = Env()
-env.read_env()
+from db_session import env
 
 DB_HOST = env("DB_HOST")
 DB_NAME = env("DB_NAME")
